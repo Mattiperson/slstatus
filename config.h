@@ -65,10 +65,10 @@ static const struct arg args[] = {
 	/* function format          argument */
 	//{ datetime, "%s",           "%F %T" },
 	//{ wifi_perc, "W: (%3s%% on ", "wlp8s0" },
-        { netspeed_rx,  " %sB/s  ", "wlp4s0" },
-	{ run_command,  " %4s  ", "pamixer --get-volume" },
-	{ cpu_perc,     " %s%%  ", NULL },
-	{ ram_perc,     " %s%%   ", NULL },
-        { battery_perc, "   %s  ", "BAT1"},	
-	{ datetime, "%s",           "%a %b %d %r" },
+        { netspeed_rx,  " %sB/s", "wlp4s0" },
+	{ run_command,  " |  %4s", "pamixer --get-volume" },
+	{ cpu_perc,     " |  %s%%", NULL },
+	{ ram_perc,     " |  %s%%", NULL },
+        { battery_perc, " |  %s", "BAT1"},	
+	{ datetime, " | %s",           "%a %b %d %r " },
 };
