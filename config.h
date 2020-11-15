@@ -69,6 +69,6 @@ static const struct arg args[] = {
 	{ run_command,  " | %s%%", "pamixer --get-volume" },
 	{ cpu_perc,     " | %s%%", NULL },
 	{ ram_perc,     " | %s%%", NULL },
-        { battery_perc, " | %s", "BAT1"},	
-	{ datetime, " | %s",           "%a %b %d %r" },
+        { battery_perc, " | %s%%", "BAT1"},	
+	{ datetime, " | %s",           "%a %b %d %r " },
 };
